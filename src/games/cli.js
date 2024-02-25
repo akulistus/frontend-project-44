@@ -1,7 +1,7 @@
 import * as utils from "../index.js"
 
 const playGame = () => {
-  utils.greetings();
+  utils.greetings("brain-game");
   const name = utils.askQuestion("May I have your name?")
   console.log(`Hello, ${name}!`);
 };
