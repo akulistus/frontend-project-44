@@ -16,6 +16,7 @@ const playGCDGame = () => {
     winner = utils.compareAnswers(userAnswer, correctAnswer);
 
     if (!winner) {
+      console.log(`Let's try again, ${name}!`)
       break;
     }
   }

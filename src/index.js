@@ -36,3 +36,16 @@ export const calculateHCF = (firstNumber, secondNumber) => {
 
   return first;
 };
+
+export const getSequence = () => {
+  const start = getRandomInt(50);
+  const step = getRandomInt(15);
+  const randIndex = getRandomInt(10);
+
+  const sequence = Array(10).fill().map((_, index) => start + index*step);
+
+  const answer = sequence[randIndex];
+  sequence[randIndex] = "...";
+
+  return [answer, sequence];
+}
