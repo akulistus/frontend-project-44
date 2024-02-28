@@ -45,7 +45,7 @@ export const getSequence = () => {
   const sequence = Array(10).fill().map((_, index) => start + index * step);
 
   const answer = sequence[randIndex];
-  sequence[randIndex] = '...';
+  sequence[randIndex] = '..';
 
   return [answer, sequence];
 };
