@@ -3,7 +3,7 @@ import * as utils from '../index.js';
 const playCalcGame = () => {
   utils.greetings('brain-calc');
   const name = utils.askQuestion('May I have your name?');
-  console.log(`Hello!, ${name}!`);
+  console.log(`Hello, ${name}!`);
   console.log('What is the result of the expression?');
 
   let winner = true;
