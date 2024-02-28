@@ -11,10 +11,10 @@ const playPrimeGame = () => {
 
   for (let i = 0; i < 3; i += 1) {
     if (utils.getRandomInt(10) > 5) {
-      question = utils.getPrime();
+      question = utils.getRandPrime(1, 100);
       correctAnswer = 'yes';
     } else {
-      question = utils.getPrime() + 1;
+      question = utils.getRandPrime(1, 100) + 1;
       correctAnswer = 'no';
     }
 

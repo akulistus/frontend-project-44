@@ -50,7 +50,17 @@ export const getSequence = () => {
   return [answer, sequence];
 };
 
-export const getPrime = () => {
-  const number = getRandomInt(50);
-  return 2 * number + 1;
+const getPrimes = (min, max) => {
+  const result = Array(max + 1)
+    .fill(0)
+    .map((_, i) => i);
+  for (let i = 2; i <= Math.sqrt(max + 1); i += 1) {
+    for (let j = i ** 2; j < max + 1; j += i) delete result[j];
+  }
+  return Object.values(result.slice(Math.max(min, 2)));
+};
+
+export const getRandPrime = (min, max) => {
+  const primes = getPrimes(min, max);
+  return primes[getRandomInt(primes.length)];
 };
