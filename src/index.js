@@ -14,7 +14,7 @@ export const askQuestion = (question) => {
 
 export const compareAnswers = (userAnswer, correctAnswer) => {
   let winner = true;
-  if (Number(userAnswer) === correctAnswer) {
+  if (userAnswer === correctAnswer.toString()) {
     console.log('Correct!');
   } else {
     winner = false;
@@ -42,10 +42,15 @@ export const getSequence = () => {
   const step = getRandomInt(15);
   const randIndex = getRandomInt(10);
 
-  const sequence = Array(10).fill().map((_, index) => start + index*step);
+  const sequence = Array(10).fill().map((_, index) => start + index * step);
 
   const answer = sequence[randIndex];
-  sequence[randIndex] = "...";
+  sequence[randIndex] = '...';
 
   return [answer, sequence];
-}
+};
+
+export const getPrime = () => {
+  const number = getRandomInt(50);
+  return 2 * number + 1;
+};
