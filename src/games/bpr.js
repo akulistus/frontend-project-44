@@ -3,7 +3,7 @@ import * as utils from '../index.js';
 const playPrimeGame = () => {
   utils.greetings('brain-prime');
   const name = utils.askQuestion('May I have your name?');
-  console.log(`Hello!, ${name}!`);
+  console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   let winner = true;
   let correctAnswer;

@@ -3,7 +3,7 @@ import * as utils from '../index.js';
 const playProgressionGame = () => {
   utils.greetings('brain-progression');
   const name = utils.askQuestion('May I have your name?');
-  console.log(`Hello!, ${name}!`);
+  console.log(`Hello, ${name}!`);
   console.log('What number is missing in the progression?');
 
   let winner = true;
