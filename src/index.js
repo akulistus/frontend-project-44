@@ -50,14 +50,27 @@ export const getSequence = () => {
   return [answer, sequence];
 };
 
+export const calculateExpression = (operator, firstNumber, secondNumber) => {
+  if (operator === '+') {
+    return firstNumber + secondNumber;
+  } if (operator === '-') {
+    return firstNumber - secondNumber;
+  }
+  return firstNumber * secondNumber;
+};
+
 const getPrimes = (min, max) => {
   const result = Array(max + 1)
     .fill(0)
     .map((_, i) => i);
+
   for (let i = 2; i <= Math.sqrt(max + 1); i += 1) {
-    for (let j = i ** 2; j < max + 1; j += i) delete result[j];
+    for (let j = i ** 2; j < max + 1; j += i) {
+      result[j] = undefined;
+    }
   }
-  return Object.values(result.slice(Math.max(min, 2)));
+
+  return result.slice(Math.max(min, 2)).filter((num) => num !== undefined);
 };
 
 export const getRandPrime = (min, max) => {
