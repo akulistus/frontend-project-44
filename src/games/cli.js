@@ -1,8 +1,9 @@
-import * as utils from '../index.js';
+import readlineSync from 'readline-sync';
 
 const playGame = () => {
-  utils.greetings('brain-game');
-  const name = utils.askQuestion('May I have your name?');
+  console.log('brain-game\n');
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
 };
 
