@@ -27,7 +27,7 @@ const playPrimeGame = () => {
     question = getRandPrime(1, 100);
     correctAnswer = 'yes';
   } else {
-    question = getRandPrime(1, 100) + 1;
+    question = getRandPrime(1, 100) * 2;
     correctAnswer = 'no';
   }
 
