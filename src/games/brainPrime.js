@@ -6,18 +6,15 @@ const settings = {
 };
 
 const isPrime = (number) => {
-  for(let i = 2, s = Math.sqrt(number); i <= s; i++) {
-    if(number % i === 0) return false;
+  for (let i = 2, s = Math.sqrt(number); i <= s; i += 1) {
+    if (number % i === 0) return false;
   }
   return number > 1;
 };
 
 const generateRound = () => {
-  let question;
-  let answer;
-  
-  question = getRandomNumber(1, 100);
-  answer = isPrime(question) ? 'yes' : 'no';
+  const question = getRandomNumber(1, 100);
+  const answer = isPrime(question) ? 'yes' : 'no';
 
   return [answer, question];
 };

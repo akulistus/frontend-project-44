@@ -24,7 +24,7 @@ const generateRound = () => {
 };
 
 const runGame = () => {
-  runEngine(settings, generateRound)
-}
+  runEngine(settings, generateRound);
+};
 
 export default runGame;
