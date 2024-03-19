@@ -31,12 +31,17 @@ $ brain-prime
 ```
 Примеры каждой из игр приведены ниже.
 
-[![asciicast](https://asciinema.org/a/AxyqrmJQpEYMaWpFAizAlltG7.svg)](https://asciinema.org/a/AxyqrmJQpEYMaWpFAizAlltG7)
+# brain-calc
+[![asciicast](https://asciinema.org/a/x5FUcuDdTIGBk2B1vQyS9EW9D.svg)](https://asciinema.org/a/x5FUcuDdTIGBk2B1vQyS9EW9D)
 
-[![asciicast](https://asciinema.org/a/AxyqrmJQpEYMaWpFAizAlltG7.svg)](https://asciinema.org/a/AxyqrmJQpEYMaWpFAizAlltG7)
+# brain-even
+[![asciicast](https://asciinema.org/a/5R4oYuBQM658MDPPjsNRV1Uw4.svg)](https://asciinema.org/a/5R4oYuBQM658MDPPjsNRV1Uw4)
 
-[![asciicast](https://asciinema.org/a/AxyqrmJQpEYMaWpFAizAlltG7.svg)](https://asciinema.org/a/AxyqrmJQpEYMaWpFAizAlltG7)
+# brain-gcd
+[![asciicast](https://asciinema.org/a/66cSDnFy8lR1U2zzmwwp6cmHy.svg)](https://asciinema.org/a/66cSDnFy8lR1U2zzmwwp6cmHy)
 
-[![asciicast](https://asciinema.org/a/AxyqrmJQpEYMaWpFAizAlltG7.svg)](https://asciinema.org/a/AxyqrmJQpEYMaWpFAizAlltG7)
+# brain-prime
+[![asciicast](https://asciinema.org/a/unUleyj2FchM4KAqDeajkYgdd.svg)](https://asciinema.org/a/unUleyj2FchM4KAqDeajkYgdd)
 
-[![asciicast](https://asciinema.org/a/AxyqrmJQpEYMaWpFAizAlltG7.svg)](https://asciinema.org/a/AxyqrmJQpEYMaWpFAizAlltG7)
+# brain-progression
+[![asciicast](https://asciinema.org/a/a6Y23e6Q8yuxsDmV9Ew6AJDkw.svg)](https://asciinema.org/a/a6Y23e6Q8yuxsDmV9Ew6AJDkw)
