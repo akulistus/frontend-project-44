@@ -1,9 +1,7 @@
 import getRandomNumber from '../getRandomNumber.js';
 import runEngine from '../engine.js';
 
-const settings = {
-  mainQuestion: 'What is the result of the expression?',
-};
+const description = 'What is the result of the expression?';
 
 const calculate = (operator, number1, number2) => {
   switch (operator) {
@@ -30,7 +28,7 @@ const generateRound = () => {
 };
 
 const runGame = () => {
-  runEngine(settings, generateRound);
+  runEngine(description, generateRound);
 };
 
 export default runGame;

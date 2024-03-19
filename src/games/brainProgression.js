@@ -1,17 +1,12 @@
 import getRandomNumber from '../getRandomNumber.js';
 import runEngine from '../engine.js';
 
-const settings = {
-  mainQuestion: 'What number is missing in the progression?',
-};
+const description = 'What number is missing in the progression?';
 
-const getSequence = (arraySize, start, step, hiddenNumberIndex) => {
+const getSequence = (arraySize, start, step) => {
   const sequence = Array(arraySize).fill().map((_, index) => start + index * step);
 
-  const answer = sequence[hiddenNumberIndex];
-  sequence[hiddenNumberIndex] = '..';
-
-  return [answer, sequence];
+  return sequence;
 };
 
 const generateRound = () => {
@@ -19,12 +14,15 @@ const generateRound = () => {
   const start = getRandomNumber(0, 50);
   const step = getRandomNumber(0, 15);
   const hiddenNumberIndex = getRandomNumber(0, arraySize - 1);
-  const [answer, sequense] = getSequence(arraySize, start, step, hiddenNumberIndex);
-  return [answer.toString(), sequense.join(' ')];
+  const sequence = getSequence(arraySize, start, step);
+  const answer = sequence[hiddenNumberIndex];
+  sequence[hiddenNumberIndex] = '..';
+
+  return [answer.toString(), sequence.join(' ')];
 };
 
 const runGame = () => {
-  runEngine(settings, generateRound);
+  runEngine(description, generateRound);
 };
 
 export default runGame;

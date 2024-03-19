@@ -1,9 +1,7 @@
 import getRandomNumber from '../getRandomNumber.js';
 import runEngine from '../engine.js';
 
-const settings = {
-  mainQuestion: 'Find the greatest common divisor of given numbers.',
-};
+const description = 'Find the greatest common divisor of given numbers.';
 
 const calculateHCF = (number1, number2) => {
   let first = number1;
@@ -29,7 +27,7 @@ const generateRound = () => {
 };
 
 const runGame = () => {
-  runEngine(settings, generateRound);
+  runEngine(description, generateRound);
 };
 
 export default runGame;
